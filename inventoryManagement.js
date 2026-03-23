@@ -3,7 +3,7 @@ let products = ["laptop", "phone", "headphones", "monitor"];
 
 
 function logFirstProduct() {
-  console.log("First product:", products[0]);
+  console.log( products[0]);
 }
 logFirstProduct();
 
