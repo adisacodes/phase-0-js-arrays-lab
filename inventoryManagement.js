@@ -5,31 +5,34 @@ let products = ["laptop", "phone", "headphones", "monitor"];
 function logFirstProduct() {
   console.log("First product:", products[0]);
 }
-
+logFirstProduct();
 
 function addProduct(newProduct) {
   products.push(newProduct);
+  return products;
 }
-
+addProduct("mouse");
+  console.log(products);
 
 function updateProductName(index, newName) {
   products[index] = newName;
+  return products;
   }
-
+updateProductName(1, "smartphone");
+  console.log(products);
 
   function removeLastProduct() {
     products.pop();
+    return products;
   }
-
-  logFirstProduct();
-  addProduct("mouse");
+removeLastProduct();
   console.log(products);
+  
+  
 
-  updateProductName(1, "smartphone");
-  console.log(products);
+  
 
-  removeLastProduct();
-  console.log(products);
+  
 
 
 
